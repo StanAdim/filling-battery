@@ -1,0 +1,92 @@
+html ,body{
+    background: #02020d;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+.main-part {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec-outer{
+    padding:20px;
+    margin:0;
+    background-image: url("../images/img (2).jpg");
+    background-size:cover;
+    position: absolute;
+    top:10%;
+    border:2px solid chocolate;
+}
+.sec-inner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.up-title{
+    text-align: center;
+    padding:10px;
+    margin:4px;
+    font-size: 24px;
+    font-family: "Berlin Sans FB Demi";
+    font-weight:200;
+    color:greenyellow;
+    text-transform: uppercase;
+}
+.up-title small{
+    font-size: 12px;
+    text-transform: lowercase;
+    border:1px solid yellow;
+    padding:2px;
+    border-radius: 25px;
+    transition: .5s ease;
+    font-family: Consolas;
+}
+.up-title small:hover{
+    padding:3px;
+    color: #00ff0c;
+    background:black;
+    cursor: pointer;
+    transform:scaleY(1.2);
+}
+.battery{
+    width:20rem;
+    height: 4.3rem;
+    display:flex;
+    justify-content: center;
+    border:2px solid #47ff10;
+    align-items: center;
+    border-radius:0px 50px 50px 0px;
+
+
+}
+.bars{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top:3px;
+    grid-gap: 6px;
+
+
+}
+.bar{
+    align-items: center;
+    height:3.5rem ;
+    width:2.2rem;
+    background: rgba(0, 255, 12, 0.56);
+    transition: .5s ease;
+    border:1px solid white;
+    border-radius: 5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    box-shadow: 1px 1px 8px #d11413;
+}
+.bar-change{
+    transform:rotateY(-60deg);
+    border-color: #47ff10;
+    background: rgba(217, 214, 255, 0);
+
+}
+#bar-1{
+    border-radius:0px 50px 50px 0px;
+}
